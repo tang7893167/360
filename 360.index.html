@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360社区</title>
+    <style media="screen">
+       *{
+        margin: 0px;
+        padding: 0px;
+         }
+       li{
+        list-style: none;
+         }
+       a{
+        text-decoration: none;
+         }
+       div{
+         font-family: "Microsoft YaHei", SimHei, Verdana, Arial, sans-serif;
+         }
+       body{
+         background: #f1f2f6;
+          }
+       a:hover{
+         color: rgb(46.199.187);
+          }
+      .D1{
+        height: 130px;
+        background: #00cabe;
+         }
+      .D1-1{
+        width: 100px;
+        height: 30px;
+        background: #cccccc;
+        font-size: 20px;
+        font-weight: 800;
+        color: #777777;
+        text-align: center;
+        float: right;
+         }
+      .D1-2{
+        width: 1420px;
+        height: 130px;
+        margin: auto;
+        background: url("./1.png");
+        }
+      .D2{
+        height: 30px;
+        background: #757575;
+         }
+      .D2-1{
+        width:1240px;
+        height:30px;
+        margin: auto;
+         }
+      .D2-1 li{
+        float: left;
+        margin-right: 10px;
+        color: #ffffff;
+         }
+      .D2-1 ul li a{
+        font-size: 11px;
+        color: #fff;
+         }
+      .D2-1 ul li a:hover{
+        color: #D3D3D3;
+        }
+      .DD3{
+        background: #ffffff;
+       }
+      .D3{
+        width: 1240px;
+        height: 85px;
+        margin: auto;
+        /*border: 1px solid red;*/
+       }
+      .D3 li{
+        float: left;
+        line-height: 85px;
+       }
+      .D3 a{
+        color: #5c5c5c;
+        margin-right: 15px;
+      }
+      .D3 a:hover{
+        color: rgb(46, 199, 187);
+      }
+      .D3 img{
+        margin-right: 175px;
+        margin-top: 20px;
+      }
+      input{
+        width: 240px;
+        height: 30px;
+        margin-left: 55px;
+      }
+      .D3-l1{
+        width: 30px;
+        height: 34px;
+        background: gray;
+        position: relative;
+        top: 28px;
+      }
+      .D3 ul li .a1{
+        margin-left: 35px;
+      }
+      .D3 ul li .a2{
+        margin: 0px;
+      }
+      .box{
+        width: 1240px;
+        margin: auto;
+      }
+      .box .box-1{
+        width: 1240px;
+        height: 400px;
+        background: url("./3.png");
+        /*margin-top: 20px;*/
+      }
+      .box-2{
+        width:925px;
+        height: 3010px;
+        background: #ffffff;
+        margin-top: 20px;
+        float: left;
+      }
+      .ta{
+        width: 280px;
+        height: 210px;
+        float: left;
+      }
+      .box img{
+        width: 280px;
+        height: 210px;
+        margin-top: 45px;
+        margin-right: 30px;
+        /*float: left;*/
+      }
+      .box-2 li{
+        width: 835px;
+        height: 300px;
+        border-bottom: 1px solid lightgray;
+        margin: auto;
+      }
+      .box .box-2 .new1{
+        width: 525px;
+        height: 195px;
+        /*border: 1px solid red;*/
+        float: right;
+        margin-top: 50px;
+         }
+      .box h2{
+        font-size: 21px;
+        color: #5c5c5c;
+        font-weight: 400;
+        padding-bottom: 15px;
+      }
+      .box p{
+        font-size: 15px;
+        color: #5c5c5c;
+        padding-bottom: 10px;
+        line-height: 27px;
+      }
+      .box p a:hover{
+        color: rgb(46,199,187);
+      }
+      .box span{
+        font-size: 13px;
+      }
+      .box span a{
+        color: inherit;
+      }
+      .box .new1-bottom span a:hover{
+        color: rgb(46,199,187);
+      }
+      .click{
+        width: 20px;
+        height: 20px;
+        background: url("./jl.png");
+        position: relative;
+        top: -10px;
+        left: 470px;
+      }
+      .conceal ul{
+        width: 220px;
+        height: 51px;
+        float: right;
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        margin-left: 613px;
+        visibility:hidden;
+      }
+      .conceal li {
+        width: 34px;
+        height: 34px;
+        border-radius: 18px;
+        float: left;
+        margin-top: 7px;
+        margin-left: 7px;
+      }
+      .conceal a:hover{
+        background: rgba(38, 37, 84, 0.42);
+      }
+      .conceal a{
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        float: left;
+      }
+      .conceal .a1{
+        background: url("./jl1.png") 76px 1px;
+      }
+      .conceal .a2{
+        background: url("./jl1.png") 0px 1px;
+      }
+      .conceal .a3{
+        background: url("./jl1.png") -42px 1px;
+      }
+      .conceal .a4{
+        background: url("./jl1.png") -84px 1px;
+      }
+      .conceal .a5{
+        background: url("./jl1.png") 35px 1px;
+      }
+      .box-3{
+        width: 270px;
+        height: 2078px;
+        background: #ffffff;
+        float: right;
+        /*margin-top:20px;*/
+        padding: 15px;
+      }
+      .box-3-1{
+        height: 85px;
+        background: #2ec7bb;
+        margin-bottom: 10px;
+      }
+      .box-3-1 p{
+        font-size: 40px;
+        line-height: 85px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .box-3-2{
+        width: 135px;
+        height: 103px;
+        background: #2ec7bb;
+        float: left;
+      }
+      .box-3-2 p{
+        text-align: center;
+        color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 0px;
+      }
+      .box-3-2 .p1{
+        font-size:16px;
+      }
+      .box-3-2 .p2{
+        font-size:26px;
+      }
+      .box-3-2 .p3{
+        font-size:12px;
+      }
+      .box-3-3 {
+        width: 127px;
+        height: 103px;
+        float: right;
+      }
+      .box-3-3 .top{
+        width: 122px;
+        height: 44px;
+        font-size: 20px;
+        text-align: center;
+        color: #2ec7bb;
+        border: 2px solid #2ec7bb;
+        line-height: 44px;
+        float: left;
+        margin-bottom: 5px;
+      }
+      .box-3-3 .down{
+        width: 122px;
+        height: 44px;
+        font-size: 20px;
+        text-align: center;
+        color: #2ec7bb;
+        border: 2px solid #2ec7bb;
+        line-height: 44px;
+        float: left;
+      }
+      .box-3-4{
+        width: 270px;
+        height: 165px;
+        float: left;
+        margin-top: 30px;
+        margin-bottom: 35px;
+      }
+      .box-3-4 h4{
+        font-style: normal;
+        font-weight: 400;
+      }
+      .box-3-4 img{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        margin:0px;
+        padding-top:0px;
+      }
+      .box-3-4 ul li {
+        width: 130px;
+        height: 26px;
+        margin-top: 20px;
+        float: left;
+         }
+      .box-3-4 ul li a{
+        width: 106px;
+        height: 26px;
+        font-size: 12px;
+        color: #6f6f6f;
+        line-height: 26px;
+      }
+      .box-3-5{
+        width: 270px;
+        height: 260px;
+        float: left;
+      }
+      .box-3-5 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-6{
+        width: 270px;
+        height: 200px;
+        float: left;
+        margin-bottom: 35px;
+      }
+      .box-3-6 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-6 img{
+        width: 270px;
+        height: 152px;
+        margin-top: 20px;
+      }
+      .box-3-7{
+        width: 270px;
+        height: 300px;
+        float: left;
+      }
+      .box-3-7 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-7 li{
+        width: 270px;
+        height: 35px;
+        line-height: 35px;
+      }
+      .box-3-7 li a{
+        color: #6f6f6f;
+        font-size: 12px;
+      }
+      .box-3-7 li a:hover{
+        color: #2ec7bb;
+      }
+      .box-3-8{
+        width: 270px;
+        height: 220px;
+        float: left;
+        margin-top: 35px;
+      }
+      .box-3-8 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-8 .h4{
+        display: inline-block;
+      }
+      .box-3-8 .stable{
+        display:inline-block;
+        margin-left: 70px;
+        cursor: pointer;/*换小手*/
+      }
+      /*.box-3-8 .stable:hover{
+        color: #2ec7bb;
+        border-bottom: 2px solid #2ec7bb;
+      }*/
+      .box-3-8 .obt{
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      /*.box-3-8 .obt:hover{
+        color: #2ec7bb;
+        border-bottom: 2px solid #2ec7bb;
+      }*/
+      .box-3-8 ul li{
+        font-size: 12px;
+        color: #6f6f6f;
+        margin-top: 20px;
+      }
+      .box-3-8 .ROM{
+        width: 110px;
+        height: 32px;
+        background: #2ec7bb;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 8px;
+        float: left;
+        margin-top: 20px;
+        color: #fff;
+      }
+      .box-3-8 .htc{
+        width: 110px;
+        height: 32px;
+        background: #c9c9c9;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 8px;
+        float: left;
+        margin-left: 25px;
+        margin-top: 20px;
+        color: #fff;
+      }
+      .box-3-9{
+        width: 270px;
+        height: 225px;
+        float: left;
+        margin-top: 35px;
+      }
+      .box-3-9 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-9 hr{
+        margin-bottom: 10px;
+      }
+      .box-3-9 ul li{
+        width: 77px;
+        height: 77px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .box-3-9 ul li div{
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        margin: auto;
+      }
+      .box-3-9 ul li p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .box-3-9 ul li p:hover{
+        color: #2ec7bb;
+      }
+      .box-3-9 .QQ1{
+        background: url("./Q1.jpg");
+      }
+      .box-3-9 .QQ2{
+        background: url("./Q2.jpg");
+      }
+      .box-3-9 .QQ3{
+        background: url("./Q3.png");
+      }
+      .box-3-9 .QQ4{
+        background: url("./Q4.jpg");
+      }
+      .box-3-9 .QQ5{
+        background: url("./Q5.jpg");
+      }
+      .box-3-9 .QQ6{
+        background: url("./Q6.jpg");
+      }
+      .box-3-10{
+        width: 270px;
+        height: 300px;
+        /*border: 1px solid red;*/
+        float: left;
+        margin-top: 35px;
+      }
+      .box-3-10 h4{
+        font-size: 14px;
+        color: #3c3c3c;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+      .box-3-10 .QR{
+        width: 240px;
+        height: 240px;
+        background: url("./QR.png");
+        margin: auto;
+        margin-top: 20px;
+      }
+      .box-3 hr{
+        color: lightgray;
+      }
+
+      .box-4{
+        width: 925px;
+        height: 90px;
+        float: left;
+        background: #fff;
+      }
+
+      .box-4 ul {
+        height: 32px;
+        width: 775px;
+        line-height: 90px;
+        padding-left: 150px;
+      }
+      .box-4 ul li{
+        float: left;
+        margin-right: 20px;
+      }
+      .box-4 ul li a{
+        color: #6f6f6f;
+        font-size: 14px;
+      }
+      .box-4 ul li a:hover{
+        color: #2ec7bb;
+      }
+
+      .bottom{
+        width: 100%;
+        height: 170px;
+        background: #fff;
+        margin-top: 45px;
+        float: left;
+      }
+      .bottom ul{
+        width: 1240px;
+        height: 30px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .bottom ul li {
+        float: left;
+        font-size:  12px;
+        line-height: 30px;
+        margin-right: 15px;
+      }
+      .bottom ul li a{
+        color: #6f6f6f;
+      }
+      .bottom ul li a:hover{
+        color: #2ec7bb;
+      }
+      .bottom p{
+        font-size: 12px;
+        color: #6f6f6f;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /*--------------------------------------*/
+      .DD{
+        height: 20px;
+        background: #f1f2f6;
+      }
+      .special ul{
+        width: 185px;
+        height: 290px;
+        border: 1px solid lightgray;
+        position: absolute;
+        top: 212px;
+        left: 1082px;
+        background: #fff;
+        z-index: -100;
+      }
+      .special ul a{
+        width: 185px;
+        height: 29px;
+        /*border: 1px solid red;*/
+        float: left;
+        font-size: 14px;
+        line-height: 27px;
+        color: inherit;
+      }
+      .special ul a:hover{
+        background: lightgray;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="D1">
+      <div class="D1-1">关闭</div>
+      <div class="D1-2"></div>
+    </div>
+    <div class="D2">
+     <div class="D2-1">
+          <ul>
+            <li><a href="#">360官网</a></li>
+            <li>|</li>
+            <li><a href="#">360商城</a></li>
+            <li>|</li>
+            <li><a href="#">360手机官网</a></li>
+            <li>|</li>
+            <li><a href="#">社区客户端</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="DD3">
+      <div class="D3">
+       <ul>
+        <li><img src="./2.png" alt="" /></li>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">论坛</a></li>
+        <li><a href="#">版本</a></li>
+        <li><a href="#">同城</a></li>
+        <li><a href="#">好奇者试用</a></li>
+        <li><a href="#">精彩活动</a></li>
+        <li><a href="#">专题</a></li>
+        <li><input type="text" name="name" value=""></li>
+        <li class="D3-l1"></li>
+        <li><a class="a1" href="#">登录</a></li>
+        <li><a class="a2" href="#">注册</a></li>
+       </ul>
+      </div>
+    </div>
+    <div class="DD">
+    </div>
+    <div class="box">
+      <div class="box-1"></div>
+      <div class="box-2">
+        <ul>
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n1.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click1"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u1">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n2.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click2"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u2">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n3.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click3"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u3">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n4.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click4"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u4">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n5.jpg" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click5"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u5">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n6.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click6"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u6">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n7.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click7"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u7">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n8.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click8"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u8">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n9.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click9"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u9">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="new-img1">
+              <div class="ta">
+                <a href="#"><img src="./n10.png" alt="" /></a>
+              </div>
+              <div class="new1">
+                <a href="#">
+                  <h2>
+                    周鸿祎：网络安全需要有灵感、有天赋的奇才、怪才
+                  </h2>
+                </a>
+                <p>
+                  在昨天的360SRC（360安全应急响应中心）三周年庆典上，
+                  公司来了很多安全圈里的白帽子大神，有的甚至还是大学生。
+                  面对这些年轻的白帽子，老周和360SRC一起发布了“IOT守护计划”，
+                  邀请白帽子参与到360智能硬件产品的漏洞挖掘工作中来。
+                  <a href="#">全文》</a>
+                </p>
+                <div class="new1-bottom">
+                  <span><a href="#">粉丝杂谈</a></span>
+                  <span>
+                    <span>2017-02-24</span>
+                    <span>|</span>
+                    <span>鴻鴈</span>
+                  </span>
+                  <div class="click click10"></div>
+                </div>
+              </div>
+              <div class="conceal">
+                <ul class="u10">
+                  <li><a class="a1" href="#"></a></li>
+                  <li><a class="a2" href="#"></a></li>
+                  <li><a class="a3" href="#"></a></li>
+                  <li><a class="a4" href="#"></a></li>
+                  <li><a class="a5" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="box-3">
+        <div class="box-3-1">
+          <a href="#">
+            <p>发帖</p>
+          </a>
+        </div>
+        <div class="box-3-2">
+          <p class="p1">
+            星期六
+          </p>
+          <p class="p2">
+            2.25
+          </p>
+          <p class="p3">
+            已签到4670人
+          </p>
+        </div>
+        <div class="box-3-3">
+          <a class="top" href="#">签到</a>
+          <a class="down" href="#">抽奖</a>
+        </div>
+        <div class="box-3-4">
+          <h4>板块推荐</h4>
+          <hr>
+          <ul>
+            <li><a href="#"><img src="" alt="" />360手机N5</a></li>
+            <li><a href="#"><img src="" alt="" />手机摄影</a></li>
+            <li><a href="#"><img src="" alt="" />360手机Q5</a></li>
+            <li><a href="#"><img src="" alt="" />花椒直播</a></li>
+            <li><a href="#"><img src="" alt="" />360手机N4s</a></li>
+            <li><a href="#"><img src="" alt="" />360儿童卫视</a></li>
+          </ul>
+        </div>
+        <div class="box-3-5">
+          <h4>360手机Q5Plus发布会视频回顾</h4>
+          <hr>
+        </div>
+        <div class="box-3-6">
+          <h4>最新活动</h4>
+          <hr>
+          <a href="#"><img src="./4.png"></a>
+        </div>
+        <div class="box-3-7">
+          <h4>热门推荐</h4>
+          <hr>
+          <ul>
+            <li><a href="#">360手机N5到底有多好用？全面评测走起</a></li>
+            <li><a href="#">【四格漫画】唐僧被抓记（二）之师傅取经</a></li>
+            <li><a href="#">相逢未必偶然，360 N5 发布会回顾帖</a></li>
+            <li><a href="#">一张图看懂360手机N5，青年新旗舰</a></li>
+            <li><a href="#">【主播专访】周周小小，这个主播是草莓味儿</a></li>
+            <li><a href="#">四分屏全景监控 360看店宝开箱图赏</a></li>
+            <li><a href="#">360儿童手表5s功能评测 360巴迪龙儿童手表5</a></li>
+            <li><a href="#">【视频】360N5一台手机同时开启100个微信抢</a></li>
+          </ul>
+
+        </div>
+        <div class="box-3-8">
+          <h4 class="h4">360 OS版本</h4>
+          <h4 class="stable">稳定版</h4>
+          <h4 class="obt">公测版</h4>
+          <hr>
+          <ul>
+            <li>360手机N4S V91版</li>
+            <li>更新时间：2016年12月12日</li>
+            <li>
+              更新推荐：对齐唤醒功能，解决微信延迟，相机启动速度优化， 相机
+              专业模式拍照优化
+            </li>
+          </ul>
+
+          <a href="#">
+            <div class="ROM">
+              下载ROM
+            </div>
+          </a>
+          <a href="#">
+            <div class="htc">
+              刷机教程
+            </div>
+          </a>
+
+        </div>
+        <div class="box-3-9">
+          <h4>明星用户</h4>
+          <hr>
+          <ul>
+            <li><a href="#">
+              <div class="QQ1">
+              </div>
+              <p>andytxg</p>
+            </a></li>
+            <li><a href="#">
+              <div class="QQ2">
+              </div>
+              <p>ZZH</p>
+            </a></li>
+            <li><a href="#">
+              <div class="QQ3">
+              </div>
+              <p>闲散游人</p>
+            </a></li>
+            <li><a href="#">
+              <div class="QQ4">
+              </div>
+              <p>jandy</p>
+            </a></li>
+            <li><a href="#">
+              <div class="QQ5">
+              </div>
+              <p>新闻者</p>
+            </a></li>
+            <li><a href="#">
+              <div class="QQ6">
+              </div>
+              <p>不满格</p>
+            </a></li>
+          </ul>
+        </div>
+        <div class="box-3-10">
+          <h4>360社区客户端下载</h4>
+          <hr>
+          <div class="QR">
+          </div>
+        </div>
+      </div>
+      <div class="box-4">
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">11</a></li>
+          <li><a href="#">12</a></li>
+          <li><a href="#">13</a></li>
+          <li><a href="#">14</a></li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">16</a></li>
+          <li><a href="#">17</a></li>
+          <li><a href="#">18</a></li>
+          <li><a href="#">19</a></li>
+          <li><a href="#">20</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-1">
+        <ul>
+          <li><a href="#">360官网</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">360商城</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">360手机官网</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">好奇者试用</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">手机中国论坛</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">太平洋手机论坛</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">手机之家论坛</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">雷锋网</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">爱搞机</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">必虎社区</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">安卓论坛</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">硬糖社区</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#">申请加入</a></li>
+        </ul>
+      </div>
+      <p>
+         备案证号：京ICP备08010314号-6  Copyright©2005-2017 360.com 版权所有 360互联网安全中心
+       </p>
+    </div>
+    <div class="float">
+      <div class="special">
+        <ul>
+          <li><a href="#">360手机N5发布会</a></li>
+          <li><a href="#">单身狗的party</a></li>
+          <li><a href="#">360N4S饶龙版发布会</a></li>
+          <li><a href="#">360N4A毛求畅快之旅</a></li>
+          <li><a href="#">360N4A发布会</a></li>
+          <li><a href="#">360Q5Plus发布会</a></li>
+          <li><a href="#">360N4S萱360OS2.0发布会</a></li>
+          <li><a href="#">360手机首届粉丝节</a></li>
+          <li><a href="#">360N4新品发布会</a></li>
+          <li><a href="#">360F4新品发布会</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".D1-1").click(function(){
+        $(".D1").css("display","none");
+      })
+
+
+      $(".click1").mouseenter(function(){
+        $(".conceal .u1").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u1").css("visibility","hidden");
+      })
+
+      $(".click2").mouseenter(function(){
+        $(".conceal .u2").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u2").css("visibility","hidden");
+      })
+
+      $(".click3").mouseenter(function(){
+        $(".conceal .u3").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u3").css("visibility","hidden");
+      })
+
+      $(".click4").mouseenter(function(){
+        $(".conceal .u4").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u4").css("visibility","hidden");
+      })
+
+      $(".click5").mouseenter(function(){
+        $(".conceal .u5").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u5").css("visibility","hidden");
+      })
+
+      $(".click6").mouseenter(function(){
+        $(".conceal .u6").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u6").css("visibility","hidden");
+      })
+
+      $(".click7").mouseenter(function(){
+        $(".conceal .u7").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u7").css("visibility","hidden");
+      })
+
+      $(".click8").mouseenter(function(){
+        $(".conceal .u8").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u8").css("visibility","hidden");
+      })
+
+      $(".click9").mouseenter(function(){
+        $(".conceal .u9").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u9").css("visibility","hidden");
+      })
+
+      $(".click10").mouseenter(function(){
+        $(".conceal .u10").css("visibility","visible");
+      })
+      $(".box").mouseleave(function(){
+        $(".conceal .u10").css("visibility","hidden");
+      })
+
+
+      $(".DD3 .D3 li a:eq(6)").mouseenter(function(){
+        $(".special ul").css("z-index","100")
+      })
+      $(".box").mouseleave(function(){
+        $(".special ul").css("z-index","-100")
+      })
+
+
+    })
+    </script>
+  </body>
+</html>
